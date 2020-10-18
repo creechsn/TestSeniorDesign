@@ -12,7 +12,7 @@ namespace NeutralNews.Pages
 
     public void OnGet()
     {
-      Message = "Your contact page.";
+      Message = "Questions or Concerns?";
     }
   }
 }
