@@ -1,9 +1,15 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
 for details on configuring this project to bundle and minify static web assets. */
+
+/* --------------------------------------------------------------------------- */
+/* ---------------- All shared styles go in here ----------------------------- */
+/* --------------------------------------------------------------------------- */
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
+
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
@@ -18,14 +24,14 @@ body {
     line-height: 1.4;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+/* Make  images in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".png"] {
+    min-width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+.img-responsive{
+
+    min-width:100%;
 }
 
 /* Hide/rearrange for smaller screens */
@@ -35,3 +41,85 @@ body {
         display: none;
     }
 }
+
+/*--------------------------------------
+   Make the search bar pretty   
+--------------------------------------*/
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    float:right;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 0px;
+    transition: width 0.4s linear;
+    text-align:left;
+    align-content:flex-start;
+}
+
+.searchbar:hover > .search_input {
+    padding: 0 10px;
+    width: 450px;
+    caret-color: red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 0px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+}
+
+/*--------------------------------------
+   Style embedded articles   
+--------------------------------------*/
+.embedContent{
+    background-color:white;
+    align-items:center;
+}
+
+/* Change colors based on political bias score */
+#farleftliberal {
+    background-color:darkblue;
+}
+#midleftliberal {
+    background-color: dodgerblue;
+}
+#neutralleftliberal {
+    background-color: lightblue;
+}
+#neutral{
+    background-color: palegreen;
+}
+#farrightconservative {
+    background-color: darkred;
+}
+#midrightconservative {
+    background-color: #ff1a1a;
+}
+#neutralrightconservative {
+    background-color: #ff8080;
+}
+

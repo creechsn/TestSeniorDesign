@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace NeutralNews.Pages
 {
-  public class AboutModel : PageModel
+  public class SocialModel : PageModel
   {
     public string Message { get; set; }
 

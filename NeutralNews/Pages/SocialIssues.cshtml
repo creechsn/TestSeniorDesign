@@ -1,0 +1,50 @@
+﻿@page
+@model SocialModel
+@{
+    ViewData["Title"] = "Social Issues";
+}
+<div class="row" id="categorychoices">
+
+</div>
+
+@* Pretty navbar for flipping through categories*@
+<div class="row">
+    <h1>Category chosen will appear here</h1>
+    @* This will be populated later using database *@
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Categories</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">BLM</a></li>
+                <li><a href="#">LGBBTQ+</a></li>
+                <li><a href="#">Women's Rights</a></li>
+                <li><a href="#">Climate Change</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Refugee Crisis</a></li>
+                <li><a href="#">Human Trafficking</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    @* Articles are placed here (need to add code to populate based on database data) *@
+    <div class="col-md-12">
+        <div class="article-container" id="farleftliberal">
+            <embed type="text/html" class="embedContent" src="https://www.theatlantic.com/culture/archive/2020/09/black-lives-matter-just-entered-its-next-phase/615952/" width="1000" height="400">
+        </div>
+        <div class="article-container" id="farrightconservative">
+            <embed type="text/html" class="embedContent" src="https://news.yahoo.com/fox-host-dems-embrace-black-151347925.html" width="1000" height="400">
+        </div>
+        <div class="article-container" id="neutral">
+            <embed type="text/html" class="embedContent" src="https://abcnews.go.com/Politics/wireStory/ginsburg-feminist-icon-memorialized-notorious-rbg-73113229" width="1000" height="400">
+        </div>
+        <div class="article-container" id="neutralrightconservative">
+            <embed type="text/html" class="embedContent" src="https://www.theamericanconservative.com/articles/how-lgbt-nonprofits-and-their-billionaire-patrons-are-reshaping-the-world/" width="1000" height="400">
+        </div>
+        <div class="article-container" id="midleftliberal">
+            <embed type="text/html" class="embedContent" src="https://www.cnn.com/2020/08/14/health/states-racism-public-health-crisis-trnd/index.html" width="1000" height="400">
+        </div>
+    </div>
+
+</div>
