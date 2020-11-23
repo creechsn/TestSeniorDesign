@@ -10,7 +10,7 @@ body {
     padding-bottom: 20px;
     font-family: Montserrat;
 }
-
+/* color not updating - will continue to troubleshoot */
 .navbar {
     font-family: Montserrat;
     font-weight: 600;
@@ -112,7 +112,8 @@ body {
     align-items:center;
 
 }
-/* Arrtice bias/title Formatting */
+/* Arrtice bias/title Formatting 
+   Bold weight has not changed yet */
 .article-title {
     font-family: Montserrat;
     color: #272626;
