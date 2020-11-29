@@ -8,6 +8,7 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -26,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">NeutralNews</a>
+                <a asp-page="/Index" class="navbar-brand">My Neutral News</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -37,13 +38,13 @@
                 <div class="container h-100">
                     <div class="d-flex justify-content-center h-100">
                         <div class="searchbar">
-                            <br />
                             <input class="search_input" type="text" placeholder="Search.." name="search">
                             <a href="#" class="search_icon"><i class="glyphicon-search"></i></a>
                         </div>
                      </div>
                  </div>
             </div>
+       </div>
 </nav>
 
     <partial name="_CookieConsentPartial" />
